@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sheria na Masharti — Tupendeze TZ</title>
+<meta name="description" content="Sheria na Masharti ya Tupendeze TZ — jukwaa la kuweka miadi ya saluni na urembo." />
+<!-- DRAFT TRANSLATION NOTICE: see top of generate_terms_sw.py before publishing. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+
+:root {
+  --tp-green: #1D9E75;
+  --tp-green-dark: #085041;
+  --tp-coral: #D85A30;
+  --tp-amber: #EF9F27;
+  --tp-bg: #FBFAF7;
+  --tp-surface: #FFFFFF;
+  --tp-ink: #15241F;
+  --tp-ink-muted: #5B6B65;
+  --tp-border: #E4E2DA;
+  --tp-max-width: 1180px;
+  --tp-content-width: 700px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--tp-bg);
+  color: var(--tp-ink);
+  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--tp-green-dark); }
+
+.tp-draft-banner {
+  background: var(--tp-amber);
+  color: #1f1605;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 16px;
+  line-height: 1.5;
+}
+
+.tp-header {
+  background: var(--tp-green-dark);
+  color: #fff;
+  padding: 28px 24px 22px;
+}
+
+.tp-header-inner {
+  max-width: var(--tp-max-width);
+  margin: 0 auto;
+}
+
+.tp-eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  margin: 0 0 6px;
+}
+
+.tp-header h1 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(28px, 5vw, 38px);
+  margin: 0 0 6px;
+  line-height: 1.15;
+}
+
+.tp-updated {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  margin: 0;
+}
+
+.tp-layout {
+  max-width: var(--tp-max-width);
+  margin: 0 auto;
+  padding: 36px 24px 80px;
+  display: grid;
+  grid-template-columns: 230px minmax(0, var(--tp-content-width));
+  gap: 48px;
+  align-items: start;
+}
+
+.tp-nav {
+  position: sticky;
+  top: 24px;
+  border-right: 1px solid var(--tp-border);
+  padding-right: 20px;
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+}
+
+.tp-nav-label {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--tp-ink-muted);
+  margin: 0 0 12px;
+}
+
+.tp-nav ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: tp-counter;
+}
+
+.tp-nav li {
+  counter-increment: tp-counter;
+  margin-bottom: 2px;
+}
+
+.tp-nav a {
+  display: flex;
+  gap: 10px;
+  padding: 7px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--tp-ink-muted);
+  font-size: 13.5px;
+  line-height: 1.4;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.tp-nav a::before {
+  content: counter(tp-counter, decimal-leading-zero);
+  color: var(--tp-green);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+
+.tp-nav a:hover {
+  background: rgba(29, 158, 117, 0.08);
+  color: var(--tp-ink);
+}
+
+.tp-nav a.active {
+  background: rgba(29, 158, 117, 0.12);
+  color: var(--tp-green-dark);
+  font-weight: 600;
+}
+
+.tp-content section {
+  padding-top: 6px;
+  margin-bottom: 40px;
+  scroll-margin-top: 24px;
+}
+
+.tp-content section:first-child {
+  padding-top: 0;
+}
+
+.tp-section-number {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--tp-green);
+  letter-spacing: 0.04em;
+  margin: 0 0 4px;
+}
+
+.tp-content h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0 0 14px;
+  color: var(--tp-ink);
+}
+
+.tp-content p {
+  margin: 0 0 12px;
+  color: var(--tp-ink);
+}
+
+.tp-content ul {
+  margin: 0 0 14px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.tp-content li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 8px;
+  color: var(--tp-ink);
+}
+
+.tp-content li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--tp-coral);
+}
+
+.tp-content a {
+  color: var(--tp-green-dark);
+  font-weight: 600;
+}
+
+.tp-divider {
+  border: none;
+  border-top: 1px solid var(--tp-border);
+  margin: 0 0 32px;
+}
+
+.tp-footer {
+  border-top: 1px solid var(--tp-border);
+  padding: 28px 24px 40px;
+  text-align: center;
+  color: var(--tp-ink-muted);
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .tp-layout {
+    grid-template-columns: 1fr;
+    padding: 24px 18px 60px;
+  }
+  .tp-nav {
+    position: static;
+    border-right: none;
+    border-bottom: 1px solid var(--tp-border);
+    padding-right: 0;
+    padding-bottom: 18px;
+    margin-bottom: 8px;
+    max-height: none;
+  }
+  .tp-nav ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .tp-nav li { margin-bottom: 0; }
+  .tp-nav a::before { display: none; }
+  .tp-nav a {
+    border: 1px solid var(--tp-border);
+    font-size: 12.5px;
+    padding: 6px 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- <div class="tp-draft-banner">
+  ⚠️ RASIMU — Tafsiri hii bado haijahakikiwa na mtaalamu wa sheria au mfasiri wa Kiswahili.
+  Usichapishe kwa watumiaji halisi kabla ya ukaguzi.
+</div> -->
+
+<header class="tp-header">
+  <div class="tp-header-inner">
+    <p class="tp-eyebrow">Tupendeze TZ</p>
+    <h1>Vigezo na Masharti</h1>
+    <p class="tp-updated">Imesasishwa: 26 June 2026</p>
+  </div>
+</header>
+
+<div class="tp-layout">
+  <nav class="tp-nav" aria-label="Sehemu za masharti">
+    <p class="tp-nav-label">Sehemu</p>
+    <ol>
+      <li><a href="#kukubali-masharti">KUKUBALI MASHARTI</a></li><li><a href="#sifa-za-kustahili">SIFA ZA KUSTAHILI</a></li><li><a href="#aina-ya-jukwaa-letu">AINA YA JUKWAA LETU</a></li><li><a href="#akaunti-za-watumiaji">AKAUNTI ZA WATUMIAJI</a></li><li><a href="#usiri-wa-taarifa-za-watumiaji">USIRI WA TAARIFA ZA WATUMIAJI</a></li><li><a href="#wajibu-wa-watumiaji">WAJIBU WA WATUMIAJI</a></li><li><a href="#mienendo-isiyoruhusiwa">MIENENDO ISIYORUHUSIWA</a></li><li><a href="#miadi-na-oda">MIADI NA ODA</a></li><li><a href="#bei-na-malipo">BEI NA MALIPO</a></li><li><a href="#majaribio-ya-bure">MAJARIBIO YA BURE</a></li><li><a href="#usajili-wa-malipo-yanayojirudia">USAJILI WA MALIPO YANAYOJIRUDIA</a></li><li><a href="#kughairi-usajili-wa-malipo-yanayojirudia">KUGHAIRI USAJILI WA MALIPO YANAYOJIRUDIA</a></li><li><a href="#sera-ya-marejesho-ya-fedha">SERA YA MAREJESHO YA FEDHA</a></li><li><a href="#sera-ya-kughairi-miadi">SERA YA KUGHAIRI MIADI</a></li><li><a href="#haki-miliki">HAKI MILIKI</a></li><li><a href="#maoni-na-maudhui-ya-watumiaji">MAONI NA MAUDHUI YA WATUMIAJI</a></li><li><a href="#kusimamishwa-na-kufutwa-kwa-akaunti-na-sisi">KUSIMAMISHWA NA KUFUTWA KWA AKAUNTI NA SISI</a></li><li><a href="#kufuta-akaunti-na-mtumiaji">KUFUTA AKAUNTI NA MTUMIAJI</a></li><li><a href="#kanusho">KANUSHO</a></li><li><a href="#kikomo-cha-dhima">KIKOMO CHA DHIMA</a></li><li><a href="#kanusho-la-afya-na-urembo">KANUSHO LA AFYA NA UREMBO</a></li><li><a href="#viunganishi-vya-tovuti-nyingine">VIUNGANISHI VYA TOVUTI NYINGINE</a></li><li><a href="#udanganyifu-na-chargeback">UDANGANYIFU NA CHARGEBACK</a></li><li><a href="#sheria-inayotumika">SHERIA INAYOTUMIKA</a></li><li><a href="#mabadiliko-ya-masharti">MABADILIKO YA MASHARTI</a></li><li><a href="#taarifa-za-mawasiliano">TAARIFA ZA MAWASILIANO</a></li>
+    </ol>
+  </nav>
+
+  <main class="tp-content">
+    <section id="kukubali-masharti">
+  <p class="tp-section-number">01</p>
+  <h2>KUKUBALI MASHARTI</h2>
+  <p>Kwa kufungua akaunti, kutazama, kuweka miadi ya huduma za saluni, kununua bidhaa za urembo, au kutumia sehemu yoyote ya jukwaa letu, unakubali kufungwa kisheria na Masharti haya.</p>
+<p>Iwapo hukubaliani na masharti haya, tafadhali usitumie jukwaa hili.</p>
+</section><section id="sifa-za-kustahili">
+  <p class="tp-section-number">02</p>
+  <h2>SIFA ZA KUSTAHILI</h2>
+  <p>Lazima uwe na umri wa miaka 18 au zaidi, au umri wa utu uzima katika eneo lako la kisheria, ili kutumia huduma za malipo na kufanya manunuzi.</p>
+<p>Ikiwa una umri wa chini ya miaka 18, matumizi yanaruhusiwa tu kwa idhini ya mzazi au mlezi.</p>
+</section><section id="aina-ya-jukwaa-letu">
+  <p class="tp-section-number">03</p>
+  <h2>AINA YA JUKWAA LETU</h2>
+  <p>Jukwaa letu linafanya kazi kama soko na kiunganishi cha huduma kinachowaunganisha watumiaji na:</p>
+<ul><li>saluni</li><li>wataalamu wa urembo</li><li>maduka ya bidhaa za urembo</li><li>wasambazaji wa bidhaa</li></ul>
+<p>Hatuwezi kuwa muuzaji au mtoa huduma wa moja kwa moja isipokuwa imeelezwa wazi.</p>
+<p>Saluni na maduka ya wahusika wengine yanawajibika peke yao kwa huduma zao, bidhaa, bei, na mwenendo wao.</p>
+</section><section id="akaunti-za-watumiaji">
+  <p class="tp-section-number">04</p>
+  <h2>AKAUNTI ZA WATUMIAJI</h2>
+  <p>Watumiaji wanapaswa kutoa taarifa sahihi, ikiwa ni pamoja na:</p>
+<ul><li>jina kamili</li><li>barua pepe</li><li>namba ya simu</li><li>taarifa za malipo pale inapohitajika</li></ul>
+<p>Wewe unawajibika kuhifadhi usiri wa nenosiri lako na shughuli zote zinazofanyika kupitia akaunti yako.</p>
+<p>Lazima utujulishe mara moja iwapo kutatokea uvamizi wowote usioidhinishwa.</p>
+</section><section id="usiri-wa-taarifa-za-watumiaji">
+  <p class="tp-section-number">05</p>
+  <h2>USIRI WA TAARIFA ZA WATUMIAJI</h2>
+  <p>Tunakusanya na kuchakata taarifa binafsi zikiwemo:</p>
+<ul><li>jina</li><li>namba ya simu</li><li>anwani ya barua pepe</li><li>historia ya miadi</li><li>historia ya manunuzi</li><li>anwani ya IP</li><li>takwimu za matumizi</li></ul>
+<p>Taarifa zako zinatumika kwa:</p>
+<ul><li>kuchakata miadi</li><li>kusimamia michango/usajili</li><li>kuboresha utendaji wa jukwaa</li><li>kuzuia udanganyifu</li><li>kuzingatia matakwa ya kisheria</li></ul>
+</section><section id="wajibu-wa-watumiaji">
+  <p class="tp-section-number">06</p>
+  <h2>WAJIBU WA WATUMIAJI</h2>
+  <p>Watumiaji wanakubali:</p>
+<ul><li>kutoa taarifa za kweli</li><li>kulinda siri za akaunti yao</li><li>kulipia huduma zilizowekewa miadi na bidhaa zilizonunuliwa</li><li>kuwaheshimu wafanyakazi wa saluni na wasambazaji</li><li>kuzingatia sheria za eneo lao</li><li>kutumia jukwaa kwa namna ya kisheria na ya kimaadili</li></ul>
+</section><section id="mienendo-isiyoruhusiwa">
+  <p class="tp-section-number">07</p>
+  <h2>MIENENDO ISIYORUHUSIWA</h2>
+  <p>Watumiaji hawapaswi:</p>
+<ul><li>kuunda akaunti za uongo</li><li>kujifanya ni mtu au biashara nyingine</li><li>kuandika maoni ya uongo</li><li>kuwabughudhi wafanyakazi wa saluni, wasambazaji, au watumiaji wengine</li><li>kupakia programu hasidi au msimbo wenye madhara</li><li>kujaribu kuingia bila idhini</li><li>kunakili, kuiba, au kuchimba taarifa za jukwaa</li><li>kuathiri ukadiriaji au maoni</li><li>kutumia njia za malipo zilizoibwa</li><li>kuuza tena huduma za jukwaa bila idhini</li><li>kujihusisha na udanganyifu au matumizi mabaya ya chargeback</li></ul>
+</section><section id="miadi-na-oda">
+  <p class="tp-section-number">08</p>
+  <h2>MIADI NA ODA</h2>
+  <p>Miadi na oda zote zinategemea:</p>
+<ul><li>upatikanaji wa mtoa huduma</li><li>uthibitisho</li><li>bei iliyoonyeshwa wakati wa malipo</li><li>eneo/huduma inayofikika</li></ul>
+<p>Saluni na maduka yanahifadhi haki ya kukataa au kupanga upya miadi.</p>
+<p>Muda uliokadiriwa wa uwasilishaji haujahakikishwa.</p>
+</section><section id="bei-na-malipo">
+  <p class="tp-section-number">09</p>
+  <h2>BEI NA MALIPO</h2>
+  <p>Bei zinazoonyeshwa kwenye jukwaa zinaweza kujumuisha:</p>
+<ul><li>gharama za huduma</li><li>kodi</li><li>gharama za uwasilishaji</li><li>kamisheni za jukwaa</li></ul>
+<p>Tunahifadhi haki ya kubadilisha bei wakati wowote kabla ya uthibitisho.</p>
+<p>Malipo yanaweza kukusanywa kupitia wachakataji wa wahusika wengine.</p>
+</section><section id="majaribio-ya-bure">
+  <p class="tp-section-number">10</p>
+  <h2>MAJARIBIO YA BURE</h2>
+  <p>Iwapo huduma za premium zinajumuisha jaribio la bure:</p>
+<ul><li>muda wa jaribio lazima uelezwe wazi</li><li>ufikiaji unabadilika kiotomatiki kuwa usajili wa malipo isipokuwa ukighairiwe kabla ya kuisha</li><li>jaribio moja kwa mtumiaji isipokuwa imeelezwa vinginevyo</li></ul>
+<p>Maelezo ya jaribio la bure yanapaswa kuwa wazi na yanayoonekana kabla ya kujisajili.</p>
+</section><section id="usajili-wa-malipo-yanayojirudia">
+  <p class="tp-section-number">11</p>
+  <h2>USAJILI WA MALIPO YANAYOJIRUDIA</h2>
+  <p>Baadhi ya huduma zinaweza kujirudia kiotomatiki, zikiwemo:</p>
+<ul><li>uanachama wa premium</li><li>orodha za saluni/maduka zilizoangaziwa</li><li>mipango ya wasambazaji</li><li>zana za matangazo</li></ul>
+<p>Usajili unajirudia kiotomatiki kulingana na kipindi cha malipo kilichochaguliwa:</p>
+<ul><li>kila wiki</li><li>kila mwezi</li><li>kila mwaka</li></ul>
+<p>isipokuwa ukighairiwe kabla ya kujirudia.</p>
+</section><section id="kughairi-usajili-wa-malipo-yanayojirudia">
+  <p class="tp-section-number">12</p>
+  <h2>KUGHAIRI USAJILI WA MALIPO YANAYOJIRUDIA</h2>
+  <p>Watumiaji wanaweza kughairi usajili wao wakati wowote kupitia mipangilio ya akaunti.</p>
+<p>Kughairi kunafanya kazi mwishoni mwa kipindi cha malipo kinachoendelea.</p>
+<p>Hakuna marejesho ya sehemu yanayohakikishwa isipokuwa sheria inahitaji hivyo.</p>
+</section><section id="sera-ya-marejesho-ya-fedha">
+  <p class="tp-section-number">13</p>
+  <h2>SERA YA MAREJESHO YA FEDHA</h2>
+  <p>Ustahiki wa marejesho unaweza kutumika kwa:</p>
+<ul><li>malipo ya mara mbili</li><li>oda ambazo hazikutimizwa</li><li>kughairiwa na mtoa huduma</li><li>bidhaa za urembo zenye kasoro</li></ul>
+<p>Marejesho hayawezi kutumika kwa:</p>
+<ul><li>kubadilisha nia baada ya huduma kukamilika</li><li>bidhaa za urembo zilizotumika/zilizofunguliwa isipokuwa zina kasoro</li><li>miadi iliyokosekana iliyosababishwa na mtumiaji</li><li>kughairi kwa kuchelewa nje ya muda unaoruhusiwa</li></ul>
+<p>Muda wa marejesho:</p>
+<p>Siku 3–14 za kazi, kutegemeana na mtoa huduma wa malipo.</p>
+</section><section id="sera-ya-kughairi-miadi">
+  <p class="tp-section-number">14</p>
+  <h2>SERA YA KUGHAIRI MIADI</h2>
+  <p>Watumiaji wanaweza kughairi miadi kabla ya muda wa mwisho wa kughairi uliowekwa na mtoa huduma.</p>
+<p>Kughairi kwa kuchelewa au kutohudhuria kunaweza kusababisha:</p>
+<ul><li>malipo kamili</li><li>malipo ya sehemu</li><li>kizuizi cha muda cha kuweka miadi</li></ul>
+</section><section id="haki-miliki">
+  <p class="tp-section-number">15</p>
+  <h2>HAKI MILIKI</h2>
+  <p>Maudhui yote ya jukwaa yakiwemo:</p>
+<ul><li>alama za biashara (logos)</li><li>muundo wa programu</li><li>maandishi</li><li>msimbo wa chanzo</li><li>ikoni</li><li>michoro</li><li>picha za bidhaa</li><li>alama za biashara zilizosajiliwa</li></ul>
+<p>ni mali yetu au ya watoa leseni wetu.</p>
+<p>Watumiaji hawapaswi kunakili, kubadilisha, kusambaza, au kuzalisha tena maudhui yoyote bila idhini ya maandishi.</p>
+</section><section id="maoni-na-maudhui-ya-watumiaji">
+  <p class="tp-section-number">16</p>
+  <h2>MAONI NA MAUDHUI YA WATUMIAJI</h2>
+  <p>Watumiaji wanaweza kuandika maoni, ukadiriaji, picha, na mrejesho.</p>
+<p>Kwa kuchapisha maudhui, unatupatia leseni ya kimataifa, isiyo ya kipekee, kutumia, kuonyesha, na kusimamia maudhui hayo.</p>
+<p>Tunaweza kuondoa maudhui yenye upotoshaji, unyanyasaji, au yasiyo halali.</p>
+</section><section id="kusimamishwa-na-kufutwa-kwa-akaunti-na-sisi">
+  <p class="tp-section-number">17</p>
+  <h2>KUSIMAMISHWA NA KUFUTWA KWA AKAUNTI NA SISI</h2>
+  <p>Tunaweza kusimamisha, kuzuia, au kufuta kabisa akaunti kwa sababu za:</p>
+<ul><li>udanganyifu</li><li>unyanyasaji</li><li>ukiukaji wa sera</li><li>miamala ya kutiliwa shaka</li><li>kughairi kwa mara nyingi</li><li>maoni ya uongo</li><li>shughuli zisizo halali na zisizo za kimaadili</li></ul>
+<p>Kufutwa kunaweza kutokea bila taarifa ya awali katika hali mbaya.</p>
+</section><section id="kufuta-akaunti-na-mtumiaji">
+  <p class="tp-section-number">18</p>
+  <h2>KUFUTA AKAUNTI NA MTUMIAJI</h2>
+  <p>Watumiaji wanaweza kufunga akaunti yao wakati wowote.</p>
+<p>Taarifa fulani zinaweza kuhifadhiwa kwa ajili ya:</p>
+<ul><li>kuzingatia sheria</li><li>kuzuia udanganyifu</li><li>utatuzi wa migogoro</li></ul>
+<p>kama inavyohitajika na sheria zinazotumika.</p>
+</section><section id="kanusho">
+  <p class="tp-section-number">19</p>
+  <h2>KANUSHO</h2>
+  <p>Huduma na bidhaa zinatolewa &quot;kama zilivyo&quot; na &quot;kama zinavyopatikana.&quot;</p>
+<p>Hatuhakikishi:</p>
+<ul><li>ufikiaji usiokatizwa</li><li>utendaji usio na hitilafu</li><li>utendaji wa saluni za wahusika wengine</li><li>ufaafu wa bidhaa kwa aina ya ngozi au nywele</li><li>matokeo maalum ya urembo</li></ul>
+<p>Watumiaji wanapaswa kufanya kipimo cha mzio (patch test) inapohitajika.</p>
+</section><section id="kikomo-cha-dhima">
+  <p class="tp-section-number">20</p>
+  <h2>KIKOMO CHA DHIMA</h2>
+  <p>Kwa kiwango cha juu kinachoruhusiwa na sheria, hatuwajibiki kwa:</p>
+<ul><li>athari za mzio</li><li>uzembe wa saluni</li><li>matumizi mabaya ya bidhaa</li><li>miadi iliyokosekana</li><li>hasara ya faida</li><li>hasara zisizo za moja kwa moja</li><li>matendo ya wahusika wengine</li></ul>
+</section><section id="kanusho-la-afya-na-urembo">
+  <p class="tp-section-number">21</p>
+  <h2>KANUSHO LA AFYA NA UREMBO</h2>
+  <p>Bidhaa za urembo na vipodozi zinaweza kuathiri watu tofauti kwa namna tofauti.</p>
+<p>Watumiaji wanapaswa:</p>
+<ul><li>kusoma lebo za viungo</li><li>kuangalia mizio</li><li>kushauriana na wataalamu inapohitajika</li></ul>
+<p>Hatuwajibiki kwa athari mbaya zinazosababishwa na bidhaa za wahusika wengine.</p>
+</section><section id="viunganishi-vya-tovuti-nyingine">
+  <p class="tp-section-number">22</p>
+  <h2>VIUNGANISHI VYA TOVUTI NYINGINE</h2>
+  <p>Jukwaa letu linaweza kuwa na viungo vya tovuti za wahusika wengine, saluni, watoa huduma za malipo, na wasambazaji.</p>
+<p>Hatuwajibiki kwa maudhui yao, sera, au taratibu zao.</p>
+</section><section id="udanganyifu-na-chargeback">
+  <p class="tp-section-number">23</p>
+  <h2>UDANGANYIFU NA CHARGEBACK</h2>
+  <p>Malipo ya udanganyifu, malalamiko ya uongo, na matumizi mabaya ya chargeback yanaweza kusababisha:</p>
+<ul><li>kusimamishwa kwa akaunti</li><li>hatua za kisheria za kurejesha fedha</li><li>kutoa taarifa kwa wachakataji wa malipo</li></ul>
+</section><section id="sheria-inayotumika">
+  <p class="tp-section-number">24</p>
+  <h2>SHERIA INAYOTUMIKA</h2>
+  <p>Masharti haya yanatawaliwa na sheria za:</p>
+<p>Jamhuri ya Muungano wa Tanzania</p>
+<p>Migogoro yoyote itatatuliwa katika mahakama zenye mamlaka katika eneo hilo.</p>
+</section><section id="mabadiliko-ya-masharti">
+  <p class="tp-section-number">25</p>
+  <h2>MABADILIKO YA MASHARTI</h2>
+  <p>Tunaweza kubadilisha Masharti haya wakati wowote.</p>
+<p>Kuendelea kutumia jukwaa baada ya mabadiliko kunamaanisha kukubali Masharti yaliyorekebishwa.</p>
+</section><section id="taarifa-za-mawasiliano">
+  <p class="tp-section-number">26</p>
+  <h2>TAARIFA ZA MAWASILIANO</h2>
+  <p>Kwa msaada, malalamiko, au maswali ya kisheria:</p>
+<p>Wasiliana kupitia njia za programu au;</p>
+<p>Tutumie barua pepe: tupendezetanzania@gmail.com</p>
+</section>
+    <hr class="tp-divider" />
+  </main>
+</div>
+
+<footer class="tp-footer">
+  <p>&copy; 2026 Tupendeze TZ. Haki zote zimehifadhiwa.</p>
+</footer>
+
+<script>
+
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll('.tp-nav a'));
+  var sections = links.map(function (a) {
+    return document.getElementById(a.getAttribute('href').slice(1));
+  });
+
+  function setActive() {
+    var pos = window.scrollY + 80;
+    var activeIndex = 0;
+    for (var i = 0; i < sections.length; i++) {
+      if (sections[i] && sections[i].offsetTop <= pos) activeIndex = i;
+    }
+    links.forEach(function (a, i) {
+      a.classList.toggle('active', i === activeIndex);
+    });
+  }
+
+  window.addEventListener('scroll', setActive, { passive: true });
+  setActive();
+})();
+
+</script>
+
+</body>
+</html>
